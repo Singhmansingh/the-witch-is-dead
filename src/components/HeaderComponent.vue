@@ -1,12 +1,18 @@
 <template>
-    <div id="header-container">
-        <div id="title-box">
+<div id="title-box" v-if="window.width <= 768">
             <h1>The Witch is Dead</h1>
             <hr>
             <h2>An RPG about MURDER</h2>
             <h3>by <a target="_blank" href="https://gshowitt.itch.io/">@gshowitt</a></h3>
         </div>
-        <div id="scenario-box">
+    <div id="header-container">
+        <div id="title-box" v-if="window.width > 768">
+            <h1>The Witch is Dead</h1>
+            <hr>
+            <h2>An RPG about MURDER</h2>
+            <h3>by <a target="_blank" href="https://gshowitt.itch.io/">@gshowitt</a></h3>
+        </div>
+        <div id="scenario-box" v-if="window.width > 1200">
             <p>The Witch-Hunter has retreated to the Village, <strong>the COWARD</strong>. get him.</p>
             <a target="_blank" href="https://imgur.com/a/d8QZe">Here's how to play.</a>
         </div>
@@ -36,14 +42,31 @@ export default {
     name:'HeaderComponent',
     setup(){
         const config = DATA;
+
         return {
-            config
+            config,
         }
+    },
+    mounted(){
+                    window.addEventListener('resize',()=> this.handleResize())
+
+        this.handleResize()
     },
     data(){
         return{
             villageTrait: "",
-            hunterTrait:""
+            hunterTrait:"",
+            window:{
+                width: 0,
+                height: 0
+            }
+        }
+    },
+    methods:{
+        handleResize(){
+            console.log("RESIZE")
+            this.window.width = window.innerWidth;
+            this.window.height = window.innerHeight;
         }
     }
 }
