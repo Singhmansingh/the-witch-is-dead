@@ -1,0 +1,62 @@
+{
+    "animals": [
+        { "species": "Fox", "stats": {"c":2, "f":2, "s":1, "q":1 } },
+        { "species": "Cat", "stats": {"c":0, "f":1, "s":3, "q":2 } },
+        { "species": "Toad", "stats": {"c":1, "f":0, "s":2, "q":1 } },
+        { "species": "Spider", "stats": {"c":2, "f":0, "s":3, "q":1 } },
+        { "species": "Owl", "stats": {"c":3, "f":1, "s":1, "q":2 } },
+        { "species": "Hare", "stats": {"c":0, "f":0, "s":2, "q":3 } },
+        { "species": "Magpie", "stats": {"c":2, "f":1, "s":1, "q":2 } },
+        { "species": "Crow", "stats": {"c":2, "f":1, "s":2, "q":1 } },
+        { "species": "Dog", "stats": {"c":1, "f":3, "s":0, "q":1 } },
+        { "species": "Rat", "stats": {"c":1, "f":0, "s":2, "q":2 } }
+    ],
+    "spells":[
+        "Unseen Hand",
+        "Conjure Light",
+        "Speak Human",
+        "Lock/Unlock, Open/Close",
+        "Conjure Dinner",
+        "Make Flame",
+        "Tidy, Clean and Mend",
+        "Plant Growth",
+        "Distract/Confuse",
+        "Make Book Read Itself Aloud"
+    ],
+    "village":[
+        "Under the Thumb of the Baron",
+        "Filled with Cheery Gnomes",
+        "Controlled by a Creepy Cult",
+        "Devoutly Religious",
+        "Incredibly Superstitious",
+        "At War with Forest Tribes",
+        "Built Around a Wizard College",
+        "Full of Hardy Having Folk",
+        "Shady and Dangerous",
+        "Oppresively Perfect"
+    ],
+    "hunter":[
+        "Armoured and Tough",
+        "Wizened and wise",
+        "Drunk and violent",
+        "Pious and aggressive",
+        "Guarded and cowardly",
+        "Magical and jealous",
+        "Clever and cruel",
+        "Duplicitous and hidden",
+        "Jolly and well-meaning",
+        "Headstrong and wild"
+    ],
+    "secret":[
+        "The village are in on it",
+        "A rival witch set her up",
+        "The witch-hunter didn't do it",
+        "The witch-hunter is waiting for you",
+        "The village folk are having a festival",
+        "The witch-hunter died and is being buried",
+        "There are two (rival) witch-hunters in town",
+        "The village is abandoned",
+        "The witch-hunter has dragged a suspect up for interrogation",
+        "The village hates him"
+    ]
+}
