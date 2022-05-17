@@ -12,11 +12,18 @@ export default {
     components:{
         PlayerSheet,
     },
+    mounted(){
+        let self = this;
+        window.addEventListener('keyup', (e) => {
+            if(e.key == "[" && self.players > 1) self.players--;
+            else if(e.key == "]") self.players++;
+        })
+    },
     data(){
         return {
-            players: 6,
+            players: 1,
 
         }
-    }
+    },
 }
 </script>
